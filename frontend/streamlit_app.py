@@ -200,13 +200,11 @@ if predict:
 
     }
     try:
-
         response = requests.post(
-    "https://customer-churn-prediction-fyo4.onrender.com/predict",
-    json=payload
-)
+         "https://customer-churn-prediction-fyo4.onrender.com/predict",
+          json=payload
+        )
         
-
         if response.status_code != 200:
             st.error("Prediction Failed!")
             st.write(response.text)
