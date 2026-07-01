@@ -202,7 +202,7 @@ if predict:
     try:
 
         response = requests.post(
-    "https://customer-churn-prediction-fyo4.onrender.com",
+    "https://customer-churn-prediction-fyo4.onrender.com/predict",
     json=payload
 )
         
